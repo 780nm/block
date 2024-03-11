@@ -1,0 +1,16 @@
+{
+    "name": "Block",
+    "description": "Blocks distracting sites",
+    "version": "0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.youtube.com/*",
+            "https://www.reddit.com/*"
+          ],
+          "run_at": "document_start",
+          "js": [ "content.js" ]
+        }
+    ]
+}
